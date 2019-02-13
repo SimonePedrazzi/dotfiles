@@ -12,57 +12,61 @@ brew tap homebrew/bundle
 brew tap homebrew/core
 
 brew upgrade && brew update
-brew install git
-
-# oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-
-brew install awscli
-brew install bat
-brew install pyenv
-brew install pyenv-virtualenv
-brew install n
-brew install neovim
-brew install htop
-brew install httpie
-brew install postgresql
-brew install the_silver_searcher
-brew install tree
-brew install zsh-completions
-brew install zsh-autosuggestions
-brew install zsh-syntax-highlighting
-
-
-brew cask install 1password
-brew cask install alfred
-brew cask install clipy
-brew cask install datagrip
-brew cask install docker
-brew cask install evernote
-brew cask install firefox
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install postman
-brew cask install pycharm-ce
-brew cask install spectacle
-brew cask install spotify
-brew cask install slack
-brew cask install visual-studio-code
-brew cask install vlc
-brew cask install transmission
-
-
-brew tap sqitchers/sqitch
-brew install sqitch --with-postgres-support
-
 
 # git
+brew install git
 git config --global user.name "Simone Pedrazzi"
 git config --global user.email "simone@igenius.ai"
 git config --global color.ui true
 git config --global core.editor "nano"
 git config --global core.commentchar "%"
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+
+brew install \
+    awscli \
+    bat \
+    pyenv \
+    pyenv-virtualenv \
+    n \
+    neovim \
+    htop \
+    httpie \
+    postgresql \
+    the_silver_searcher \
+    tree \
+    zsh-completions \
+    zsh-autosuggestions \
+    zsh-syntax-highlighting
+
+
+brew cask install \
+    1password \
+    alfred \
+    clipy \
+    datagrip \
+    docker \
+    evernote \
+    firefox \
+    google-chrome \
+    iterm2 \
+    postman \
+    pycharm-ce \
+    spectacle \
+    spotify \
+    slack \
+    visual-studio-code \
+    vlc \
+    transmission
+
+
+# sqitch
+brew tap sqitchers/sqitch
+brew install sqitch --with-postgres-support
+sqitch config --user user.name 'Simone Pedrazzi'
+sqitch config --user user.email 'simone@igenius.ai'
 
 
 # ssh
