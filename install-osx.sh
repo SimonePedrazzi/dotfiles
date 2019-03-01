@@ -81,12 +81,14 @@ main() {
         parallels
         postman
         pycharm-ce
+        slack
         spectacle
         spotify
-        slack
+        transmission
+        virtualbox
+        virtualbox-extension-pack
         visual-studio-code
         vlc
-        transmission
     )
 
     echo "Installing cask apps..."
