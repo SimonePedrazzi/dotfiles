@@ -57,7 +57,7 @@ call plug#end()
 set shell=/bin/bash
 set encoding=UTF-8
 
-let g:python3_host_prog = $HOME . '/.pyenv/versions/3.7.2/envs/neovim3/bin/python'
+let g:python3_host_prog = $HOME . '/.pyenv/versions/3.6.5/envs/neovim365/bin/python'
 let g:python_host_prog = $HOME . '/.pyenv/versions/2.7.15/envs/neovim2/bin/python'
 
 
